@@ -1,0 +1,31 @@
+import { Link } from "react-router-dom";
+function Navbar() {
+  return (
+    <nav className="flex justify-between items-center px-10 py-5 bg-white shadow-md">
+      <h1 className="text-3xl font-bold text-blue-600">
+        Civic Eye
+      </h1>
+
+      <div className="flex items-center gap-8">
+        <a href="/" className="hover:text-blue-600">Home</a>
+        <Link to="/report" className="hover:text-blue-600">Report Issue</Link>
+        <Link to="/track" className="hover:text-blue-600">
+  Track Complaint
+</Link>
+        <Link to="/map" className="hover:text-blue-600">
+  Community Map
+</Link>
+        <Link to="/admin" className="hover:text-blue-600">
+  Admin
+</Link>    
+        <a href="/login" className="hover:text-blue-600">Login</a>
+
+        <button className="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700">
+          Get Started
+        </button>
+      </div>
+    </nav>
+  );
+}
+
+export default Navbar;
