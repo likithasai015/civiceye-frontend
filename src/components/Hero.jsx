@@ -18,7 +18,7 @@ function Hero() {
   </button>
 </Link>
 
-          <Link to="/community-map">
+          <Link to="/map">
   <button className="border border-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-blue-700 transition">
     📍 Explore Community Map
   </button>
