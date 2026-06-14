@@ -18,11 +18,13 @@ function Navbar() {
         <Link to="/admin" className="hover:text-blue-600">
   Admin
 </Link>    
-        <a href="/login" className="hover:text-blue-600">Login</a>
+        <Link to="/login" className="hover:text-blue-600">Login</Link>
 
-        <button className="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700">
-          Get Started
-        </button>
+        <Link to="/register">
+  <button className="bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition">
+    Get Started
+  </button>
+</Link>
       </div>
     </nav>
   );
